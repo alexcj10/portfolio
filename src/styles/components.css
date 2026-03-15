@@ -443,6 +443,11 @@
   flex-shrink: 0;
 }
 
+/* Klyo gets a white circular background */
+#projects-card-klyo .project-card-icon {
+  background: #ffffff;
+}
+
 
 
 
