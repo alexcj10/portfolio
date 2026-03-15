@@ -30,11 +30,12 @@ export function renderProjects() {
                   </div>
                   <h3 class="project-card-title">${p.name}</h3>
                 </div>
-                <p class="project-card-desc">${p.tagline}</p>
+                <p class="project-card-desc">${p.shortSummary || p.tagline}</p>
               </div>
               <div class="project-card-body">
-                <div class="project-card-tags">
-                  ${p.techStack.map(t => `<span class="badge">${t}</span>`).join('')}
+                <div class="project-card-highlight">
+                  <span class="highlight-icon">✨</span>
+                  <span class="highlight-text">${p.highlight}</span>
                 </div>
                 <span class="project-card-link">
                   View Details
