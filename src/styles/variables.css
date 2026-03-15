@@ -79,12 +79,12 @@
    LIGHT THEME (Apple Native)
    ======================================== */
 [data-theme="light"] {
-  --bg-primary: #F5F5F7; /* Apple light grey background */
-  --bg-secondary: #FFFFFF;
-  --bg-tertiary: #E5E5EA; /* Light gray for borders/dividers */
-  --bg-elevated: #FFFFFF;
-  --bg-card: #FFFFFF;
-  --bg-card-hover: #F2F2F7;
+  --bg-primary: #ffffff; /* ChatGPT primary light background */
+  --bg-secondary: #f9f9f9; /* ChatGPT sidebar/secondary */
+  --bg-tertiary: #ececec; /* Light gray for borders/dividers */
+  --bg-elevated: #ffffff;
+  --bg-card: #f9f9f9; /* ChatGPT card/message bubble style */
+  --bg-card-hover: #f0f0f0;
   --bg-glass: rgba(255, 255, 255, 0.7);
   --bg-glass-heavy: rgba(255, 255, 255, 0.9);
 
@@ -120,14 +120,14 @@
    DARK THEME (Apple Native)
    ======================================== */
 [data-theme="dark"] {
-  --bg-primary: #000000;
-  --bg-secondary: #1C1C1E; /* Grouped background */
-  --bg-tertiary: #2C2C2E;
-  --bg-elevated: #2C2C2E;
-  --bg-card: #1C1C1E;
-  --bg-card-hover: #2C2C2E;
-  --bg-glass: rgba(28, 28, 30, 0.7);
-  --bg-glass-heavy: rgba(28, 28, 30, 0.9);
+  --bg-primary: #212121; /* ChatGPT primary dark background */
+  --bg-secondary: #171717; /* ChatGPT sidebar/contrast elements */
+  --bg-tertiary: #2f2f2f; /* ChatGPT elevated elements */
+  --bg-elevated: #2f2f2f;
+  --bg-card: #2f2f2f; /* ChatGPT card/message bubble style */
+  --bg-card-hover: #383838;
+  --bg-glass: rgba(33, 33, 33, 0.7);
+  --bg-glass-heavy: rgba(33, 33, 33, 0.9);
 
   --text-primary: #FFFFFF;
   --text-secondary: rgba(235, 235, 245, 0.6); /* #EBEBF599 */
