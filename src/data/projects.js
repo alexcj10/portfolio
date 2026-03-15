@@ -7,18 +7,18 @@ export const projects = [
     id: 'quillon',
     name: 'Quillon',
     tagline: 'Tag it. Find it. Done.',
-    description: `A modern, lightweight, and intuitive note-taking application built with Vite, React, and TypeScript. Designed for speed and efficiency, it uses **Smart RAG**, **Commands**, and **Intelligent Tags** to capture, manage, and structure your notes effortlessly.
+    description: `**Quillon** is a modern, lightweight, and intuitive note-taking application designed for speed and efficiency. It uses **Smart RAG**, **Commands**, and **Intelligent Tags** to capture, manage, and structure your notes effortlessly.
 
-The heart of Quillon is **Pownin AI** — an advanced AI powered by a 5-stage retrieval pipeline including Query Expansion, Oracle Reranking, Context Chaining, Keyword Sniper, and Reflection Core. The system self-corrects and rewrites answers until they're perfect.
+The heart of Quillon is **Pownin**, an Advanced AI powered by a 5-stage retrieval pipeline featuring Query Expansion, Oracle Reranking, Context Chaining, Keyword Sniper, and Reflection Core. Interact directly with the AI via the fast \`@pai-\` command for instant text or rich markdown responses.
 
-All data is stored locally using IndexedDB — no cloud servers, your data never leaves your device.`,
+Experience true command-driven workflows with a powerful hyper-architect interface (\`@new-\`), dynamic nodes, instantaneous math evaluation, 100+ language translations, an intelligent Pomodoro timer, and a Zen Quiz Mode — all while keeping your data **100% locally secure** using IndexedDB.`,
     features: [
-      { icon: '🧠', title: 'Smart RAG 2.0', desc: '5-stage retrieval pipeline with query expansion, reranking, and self-correction' },
-      { icon: '🏷️', title: 'Intelligent Tags', desc: 'Auto-organized Blue (folders), Green (context), Grey (loose), and Orange (group) tags' },
-      { icon: '⚡', title: 'Command-Driven', desc: '@pai- for AI queries, @docs for docs, @orange- for tag groups — all from the search bar' },
-      { icon: '🔒', title: 'Local-First', desc: 'IndexedDB storage — no cloud, no limits, complete privacy' },
-      { icon: '📝', title: 'Nodes System', desc: 'Quick task management, smart calculator, instant translation, AI summarization' },
-      { icon: '🎵', title: 'Interactive Sound', desc: 'Built-in sound system with Pomodoro timer and productivity tools' },
+      { icon: '🧠', title: 'Pownin AI (RAG 2.0)', desc: '5-stage retrieval pipeline with query expansion, oracle reranking, and self-correction' },
+      { icon: '🏷️', title: 'Tag & Group Logic', desc: 'Auto-organized folder/context tags + Orange Group tags for minimal clutter' },
+      { icon: '⚡', title: 'Hyper-Architect', desc: 'Create fully-featured notes directly from the search bar with inline attributes using @new-' },
+      { icon: '📝', title: 'Intelligent Commands', desc: 'Fetch wiki/defines, instant math solving (@c-), and inline translation (@t-)' },
+      { icon: '🎵', title: 'Sound & Productivity', desc: 'Haptic audio feedback, Pomodoro timer, and an automated Zen Quiz mode' },
+      { icon: '🔒', title: 'Boundless Local Storage', desc: 'Zero cloud servers—uncapped IndexedDB capacity scaling with your device constraints' },
     ],
     techStack: ['React', 'TypeScript', 'Vite', 'Smart RAG', 'IndexedDB', 'CSS'],
     liveUrl: 'https://quillon.netlify.app',
@@ -57,18 +57,18 @@ The Conversation Role Analysis system maps behavioral personas — Initiator, Re
     id: 'klyo',
     name: 'Klyo',
     tagline: 'The Intelligent Workspace. Plan smarter, burn out less.',
-    description: `An all-in-one workspace combining your calendar, tasks, and a **multi-specialist AI Swarm** powered by Hybrid Retrieval-Augmented Generation (RAG). Meet your executive elite team: @crock (lead assistant), @coach (burnout mentor), @analyst (data strategist), @planner (calendar coordinator), @frog (swarm orchestrator), and @historian (historical archivist).
+    description: `Klyo isn't just a calendar; it's a unified environment designed to reduce cognitive load and keep you in the flow.
 
-Features advanced **temporal intelligence** with year-aware filtering, strict timing precision, and context-aware scheduling. The dynamic calendar offers Month, Week, Day, and Year views with deep navigation and fluid Framer Motion animations.
+Meet your executive elite team: a multi-specialist Swarm powered by **Hybrid RAG** (@crock, @coach, @analyst, @planner, @frog, and @historian). Features advanced **temporal intelligence** with year-aware filtering, strict timing precision, and context-aware scheduling.
 
-Includes a **GitHub-style activity heatmap**, productivity mood tracking with burnout analysis, and a unified task sidebar — all optimized for mobile-first with touch and swipe interactions.`,
+The dynamic calendar offers Month, Week, Day, and Year views with deep navigation and fluid Framer Motion animations. Includes a **GitHub-style activity heatmap**, productivity mood tracking (🧠 Focus, ⚡ Stress, 🍀 Easy, 🔋 Exhaust) with burnout analysis, and a unified task sidebar. All optimized for mobile-first with touch interactions.`,
     features: [
-      { icon: '🤖', title: 'AI Swarm', desc: '6 specialized AI assistants with Hybrid RAG — @crock, @coach, @analyst, @planner, @frog, @historian' },
-      { icon: '🗓️', title: 'Dynamic Calendar', desc: 'Month, Week, Day, Year views with deep navigation and Framer Motion transitions' },
+      { icon: '🤖', title: 'AI Swarm', desc: '6 specialized AI assistants with Hybrid Context-Aware RAG — @crock, @coach, @analyst, @planner, @frog, @historian' },
+      { icon: '🗓️', title: 'Dynamic Calendar', desc: 'Month, Week, Day, Year views with deep navigation and fluid Framer Motion transitions' },
+      { icon: '🌍', title: 'World Clock', desc: 'Track time across 1000+ cities instantly to stay in sync with international teams' },
       { icon: '📈', title: 'Activity Heatmap', desc: 'GitHub-style yearly analysis with adaptive year selector and unified productivity scoring' },
       { icon: '🧘', title: 'Mood Tracking', desc: 'Intuition tagging (Focus, Stress, Easy, Exhaust) with AI-powered burnout analysis' },
       { icon: '⚡', title: 'Groq-Powered', desc: 'Blazing fast execution with Groq llama-3.3-70b for near-instant AI responses' },
-      { icon: '📱', title: 'Mobile-First', desc: 'Optimized for touch interactions with swipe navigation and responsive layouts' },
     ],
     techStack: ['React 18', 'TypeScript', 'Vite', 'Groq SDK', 'Hybrid RAG', 'Tailwind CSS', 'Framer Motion'],
     liveUrl: 'https://klyo.netlify.app',
