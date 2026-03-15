@@ -125,7 +125,7 @@ export function renderProjectDetail(params) {
           <h2 class="section-title">Built with.</h2>
         </div>
         <div class="tech-stack-list reveal reveal-delay-1" style="margin-top: var(--space-8);">
-          ${project.techStack.map(t => `<span class="badge" style="font-size: var(--text-sm); padding: var(--space-2) var(--space-5);">${t}</span>`).join('')}
+          ${project.techStack.map(t => `<span class="badge">${t}</span>`).join('')}
         </div>
       </div>
     </section>

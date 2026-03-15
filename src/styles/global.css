@@ -16,7 +16,7 @@ html {
 }
 
 body {
-  font-family: var(--font-primary);
+  font-family: var(--font-body);
   font-size: var(--text-base);
   font-weight: var(--weight-regular);
   line-height: 1.6;
@@ -57,6 +57,13 @@ img {
   max-width: 100%;
   height: auto;
   display: block;
+}
+
+/* Headings (Display Font) */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+  font-weight: var(--weight-bold);
+  letter-spacing: -0.02em;
 }
 
 /* Lists */
@@ -137,12 +144,9 @@ input, textarea {
   transform: none;
 }
 
-/* Text gradient */
-.text-gradient {
-  background: var(--accent-gradient);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+/* Accent Text */
+.text-accent, .text-gradient {
+  color: var(--accent-text);
 }
 
 /* Visually hidden */

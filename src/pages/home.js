@@ -47,7 +47,7 @@ export function renderHome() {
           ${featuredProjects.map((p, i) => `
             <a href="#/project/${p.id}" class="project-card reveal reveal-delay-${i + 1}" id="project-card-${p.id}">
               <div class="project-card-header">
-                <div class="project-card-icon" style="background: ${p.gradient}; color: white; border-radius: var(--radius-md);">
+                <div class="project-card-icon" style="background: ${p.gradient}; color: white;">
                   ${p.icon}
                 </div>
                 <h3 class="project-card-title">${p.name}</h3>
