@@ -758,20 +758,20 @@
   gap: var(--space-6);
 }
 .feature-card {
-  padding: var(--space-8);
+  padding: var(--space-5) var(--space-6);
   background: var(--bg-card);
   border: 1px solid var(--border-secondary);
-  border-radius: var(--radius-xl);
+  border-radius: var(--radius-lg);
   box-shadow: var(--shadow-sm);
 }
 .feature-card-header {
   display: flex;
   align-items: center;
-  gap: var(--space-3);
-  margin-bottom: var(--space-4);
+  gap: var(--space-2);
+  margin-bottom: var(--space-2);
 }
 .feature-card-icon {
-  font-size: 28px;
+  font-size: 24px;
 }
 .feature-card h3 {
   font-size: var(--text-lg);
