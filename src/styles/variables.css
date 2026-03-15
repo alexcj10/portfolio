@@ -76,66 +76,70 @@
 
 /* ========================================
    DARK THEME (Default)
+   Apple uses #1d1d1f as their primary dark background.
+   Pure #000 is only for hero/spotlight sections.
    ======================================== */
 [data-theme="dark"] {
-  --bg-primary: #000000;
-  --bg-secondary: #0a0a0a;
-  --bg-tertiary: #111111;
-  --bg-elevated: #1a1a1a;
-  --bg-card: rgba(255, 255, 255, 0.03);
-  --bg-card-hover: rgba(255, 255, 255, 0.06);
-  --bg-glass: rgba(20, 20, 20, 0.8);
-  --bg-glass-heavy: rgba(10, 10, 10, 0.9);
+  --bg-primary: #1d1d1f;
+  --bg-secondary: #000000;
+  --bg-tertiary: #2c2c2e;
+  --bg-elevated: #3a3a3c;
+  --bg-card: rgba(255, 255, 255, 0.05);
+  --bg-card-hover: rgba(255, 255, 255, 0.08);
+  --bg-glass: rgba(29, 29, 31, 0.85);
+  --bg-glass-heavy: rgba(0, 0, 0, 0.92);
 
   --text-primary: #f5f5f7;
   --text-secondary: #a1a1a6;
   --text-tertiary: #6e6e73;
   --text-muted: #48484a;
 
-  --border-primary: rgba(255, 255, 255, 0.08);
-  --border-secondary: rgba(255, 255, 255, 0.04);
-  --border-hover: rgba(255, 255, 255, 0.15);
+  --border-primary: rgba(255, 255, 255, 0.1);
+  --border-secondary: rgba(255, 255, 255, 0.05);
+  --border-hover: rgba(255, 255, 255, 0.18);
 
   --accent-primary: #6366f1;
   --accent-secondary: #a855f7;
   --accent-tertiary: #ec4899;
   --accent-gradient: linear-gradient(135deg, #6366f1 0%, #a855f7 50%, #ec4899 100%);
-  --accent-gradient-subtle: linear-gradient(135deg, rgba(99,102,241,0.1) 0%, rgba(168,85,247,0.1) 50%, rgba(236,72,153,0.1) 100%);
+  --accent-gradient-subtle: linear-gradient(135deg, rgba(99,102,241,0.12) 0%, rgba(168,85,247,0.12) 50%, rgba(236,72,153,0.12) 100%);
   --accent-text: #818cf8;
 
-  --shadow-card: 0 4px 24px rgba(0,0,0,0.4);
-  --shadow-card-hover: 0 8px 40px rgba(0,0,0,0.6);
+  --shadow-card: 0 4px 24px rgba(0,0,0,0.5);
+  --shadow-card-hover: 0 12px 48px rgba(0,0,0,0.7);
 
-  --nav-bg: rgba(0, 0, 0, 0.72);
-  --nav-border: rgba(255, 255, 255, 0.06);
+  --nav-bg: rgba(29, 29, 31, 0.72);
+  --nav-border: rgba(255, 255, 255, 0.1);
 
-  --scrollbar-bg: #1a1a1a;
-  --scrollbar-thumb: #333;
+  --scrollbar-bg: #2c2c2e;
+  --scrollbar-thumb: #48484a;
 
-  --code-bg: rgba(255,255,255,0.06);
+  --code-bg: rgba(255,255,255,0.07);
 }
 
 /* ========================================
    LIGHT THEME
+   Apple uses #fbfbfd (warm off-white) as their
+   primary light background, NOT pure #fff.
    ======================================== */
 [data-theme="light"] {
-  --bg-primary: #ffffff;
+  --bg-primary: #fbfbfd;
   --bg-secondary: #f5f5f7;
-  --bg-tertiary: #ebebed;
+  --bg-tertiary: #e8e8ed;
   --bg-elevated: #ffffff;
-  --bg-card: rgba(0, 0, 0, 0.02);
-  --bg-card-hover: rgba(0, 0, 0, 0.04);
-  --bg-glass: rgba(255, 255, 255, 0.8);
-  --bg-glass-heavy: rgba(255, 255, 255, 0.9);
+  --bg-card: rgba(0, 0, 0, 0.03);
+  --bg-card-hover: rgba(0, 0, 0, 0.05);
+  --bg-glass: rgba(251, 251, 253, 0.85);
+  --bg-glass-heavy: rgba(245, 245, 247, 0.95);
 
   --text-primary: #1d1d1f;
   --text-secondary: #6e6e73;
-  --text-tertiary: #a1a1a6;
-  --text-muted: #c7c7cc;
+  --text-tertiary: #86868b;
+  --text-muted: #aeaeb2;
 
-  --border-primary: rgba(0, 0, 0, 0.08);
-  --border-secondary: rgba(0, 0, 0, 0.04);
-  --border-hover: rgba(0, 0, 0, 0.15);
+  --border-primary: rgba(0, 0, 0, 0.06);
+  --border-secondary: rgba(0, 0, 0, 0.03);
+  --border-hover: rgba(0, 0, 0, 0.12);
 
   --accent-primary: #6366f1;
   --accent-secondary: #a855f7;
@@ -144,10 +148,10 @@
   --accent-gradient-subtle: linear-gradient(135deg, rgba(99,102,241,0.06) 0%, rgba(168,85,247,0.06) 50%, rgba(236,72,153,0.06) 100%);
   --accent-text: #4f46e5;
 
-  --shadow-card: 0 4px 24px rgba(0,0,0,0.06);
-  --shadow-card-hover: 0 12px 40px rgba(0,0,0,0.1);
+  --shadow-card: 0 2px 16px rgba(0,0,0,0.04);
+  --shadow-card-hover: 0 8px 32px rgba(0,0,0,0.08);
 
-  --nav-bg: rgba(255, 255, 255, 0.72);
+  --nav-bg: rgba(251, 251, 253, 0.72);
   --nav-border: rgba(0, 0, 0, 0.06);
 
   --scrollbar-bg: #f5f5f7;
