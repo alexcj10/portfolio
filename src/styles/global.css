@@ -1,5 +1,5 @@
 /* ========================================
-   GLOBAL STYLES
+   GLOBAL STYLES (Apple HIG)
    ======================================== */
 
 *, *::before, *::after {
@@ -13,13 +13,15 @@ html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
+  background-color: var(--bg-primary); /* Apple sets bg on html to avoid overscroll bounce artifacts */
 }
 
 body {
   font-family: var(--font-body);
   font-size: var(--text-base);
   font-weight: var(--weight-regular);
-  line-height: 1.6;
+  line-height: 1.5; /* Apple prefers 1.4-1.5 for readability */
+  letter-spacing: -0.016em; /* Apple SF Text tracking */
   color: var(--text-primary);
   background-color: var(--bg-primary);
   transition: background-color var(--duration-slow) var(--ease-smooth),
@@ -29,27 +31,34 @@ body {
 
 /* Selection */
 ::selection {
-  background: var(--accent-primary);
-  color: white;
+  background: rgba(0, 122, 255, 0.3); /* iOS selection color */
+  color: inherit;
+}
+[data-theme="dark"] ::selection {
+  background: rgba(10, 132, 255, 0.5); 
 }
 
 /* Scrollbar */
 ::-webkit-scrollbar {
-  width: 6px;
+  width: 14px; /* macOS native scrollbar thickness before shrink */
 }
 ::-webkit-scrollbar-track {
-  background: var(--scrollbar-bg);
+  background: transparent;
 }
 ::-webkit-scrollbar-thumb {
   background: var(--scrollbar-thumb);
+  border: 4px solid var(--bg-primary); /* pseudo-margin */
   border-radius: var(--radius-full);
 }
 
 /* Links */
 a {
-  color: inherit;
+  color: var(--accent-text);
   text-decoration: none;
-  transition: color var(--duration-fast) var(--ease-smooth);
+  transition: opacity var(--duration-fast) var(--ease-smooth);
+}
+a:hover {
+  opacity: 0.8;
 }
 
 /* Images */
@@ -63,8 +72,13 @@ img {
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-display);
   font-weight: var(--weight-bold);
-  letter-spacing: -0.02em;
+  letter-spacing: -0.022em; /* Tighter for SF Display */
+  color: var(--text-primary);
+  line-height: 1.2;
 }
+h1 { font-size: var(--text-4xl); letter-spacing: -0.03em; }
+h2 { font-size: var(--text-3xl); letter-spacing: -0.025em; }
+h3 { font-size: var(--text-2xl); }
 
 /* Lists */
 ul, ol {
@@ -87,6 +101,7 @@ input, textarea {
   outline: none;
   background: none;
   color: inherit;
+  font-size: var(--text-base); /* Prevents iOS zooming */
 }
 
 /* Container */
@@ -111,34 +126,34 @@ input, textarea {
 /* Page transitions */
 .page-enter {
   opacity: 0;
-  transform: translateY(20px);
+  transform: scale(0.98); /* Apple prefers subtle scale over large translation */
 }
 .page-active {
   opacity: 1;
-  transform: translateY(0);
-  transition: opacity var(--duration-slow) var(--ease-out),
-              transform var(--duration-slow) var(--ease-out);
+  transform: scale(1);
+  transition: opacity var(--duration-normal) var(--ease-out),
+              transform var(--duration-normal) var(--ease-out);
 }
 
 /* Scroll reveal */
 .reveal {
   opacity: 0;
-  transform: translateY(30px);
-  transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1),
-              transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+  transform: translateY(20px);
+  transition: opacity 0.8s cubic-bezier(0.2, 0.8, 0.2, 1),
+              transform 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
   will-change: opacity, transform;
 }
 .reveal.visible {
   opacity: 1 !important;
   transform: translateY(0) !important;
 }
-.reveal-delay-1 { transition-delay: 100ms; }
-.reveal-delay-2 { transition-delay: 200ms; }
-.reveal-delay-3 { transition-delay: 300ms; }
-.reveal-delay-4 { transition-delay: 400ms; }
-.reveal-delay-5 { transition-delay: 500ms; }
+.reveal-delay-1 { transition-delay: 50ms; }
+.reveal-delay-2 { transition-delay: 100ms; }
+.reveal-delay-3 { transition-delay: 150ms; }
+.reveal-delay-4 { transition-delay: 200ms; }
+.reveal-delay-5 { transition-delay: 250ms; }
 
-/* No-reveal fallback — ensures content is visible even if JS fails */
+/* No-reveal fallback */
 .no-reveal .reveal {
   opacity: 1;
   transform: none;
