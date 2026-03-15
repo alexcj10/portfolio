@@ -106,8 +106,10 @@ export function renderProjectDetail(params) {
         <div class="features-grid" style="margin-top: var(--space-12);">
           ${project.features.map((f, i) => `
             <div class="feature-card reveal reveal-delay-${(i % 3) + 1}">
-              <div class="feature-card-icon">${f.icon}</div>
-              <h3>${f.title}</h3>
+              <div class="feature-card-header">
+                <div class="feature-card-icon">${f.icon}</div>
+                <h3>${f.title}</h3>
+              </div>
               <p>${f.desc}</p>
             </div>
           `).join('')}

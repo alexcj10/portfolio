@@ -764,15 +764,20 @@
   border-radius: var(--radius-xl);
   box-shadow: var(--shadow-sm);
 }
+.feature-card-header {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  margin-bottom: var(--space-4);
+}
 .feature-card-icon {
   font-size: 28px;
-  margin-bottom: var(--space-4);
 }
 .feature-card h3 {
   font-size: var(--text-lg);
   font-weight: var(--weight-semibold);
-  margin-bottom: var(--space-2);
   letter-spacing: -0.01em;
+  margin: 0;
 }
 .feature-card p {
   font-size: var(--text-sm);
