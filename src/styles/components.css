@@ -427,7 +427,7 @@
 .project-card-logo-row {
   display: flex;
   align-items: center;
-  gap: 14px;
+  gap: 12px;
   margin-bottom: var(--space-4);
 }
 
