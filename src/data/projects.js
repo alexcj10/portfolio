@@ -26,7 +26,7 @@ All data is stored locally using IndexedDB — no cloud servers, your data never
     color: '#6366f1',
     gradient: 'linear-gradient(135deg, #6366f1, #818cf8)',
     icon: '/assets/quillon.png',
-    logoScale: 1.1,
+    logoScale: 1,
   },
   {
     id: 'chatlytics',
@@ -51,7 +51,7 @@ The Conversation Role Analysis system maps behavioral personas — Initiator, Re
     color: '#a855f7',
     gradient: 'linear-gradient(135deg, #a855f7, #c084fc)',
     icon: '/assets/chatlytics.png',
-    logoScale: 1.1,
+    logoScale: 1,
   },
   {
     id: 'klyo',
@@ -76,7 +76,7 @@ Includes a **GitHub-style activity heatmap**, productivity mood tracking with bu
     color: '#ec4899',
     gradient: 'linear-gradient(135deg, #ec4899, #f472b6)',
     icon: '/assets/klyo.png',
-    logoScale: 0.85,
+    logoScale: 1,
   },
   {
     id: 'ripenet',
@@ -101,7 +101,7 @@ The system identifies Apple, Banana, Mango, Orange, Papaya, and Pineapple. Featu
     color: '#10b981',
     gradient: 'linear-gradient(135deg, #10b981, #34d399)',
     icon: '/assets/ripenet.png',
-    logoScale: 1.6,
+    logoScale: 1,
   },
 ];
 

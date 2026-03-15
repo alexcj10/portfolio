@@ -427,27 +427,33 @@
 .project-card-logo-row {
   display: flex;
   align-items: center;
-  gap: var(--space-4);
+  gap: 14px;
   margin-bottom: var(--space-4);
 }
 
 .project-card-icon {
-  width: 48px;
-  height: 48px;
-  border-radius: var(--radius-lg); /* Precise Apple icon radius */
+  width: 52px;
+  height: 52px;
+  border-radius: 50%; /* Circular logo container */
   overflow: hidden;
   background: var(--bg-tertiary);
   display: flex;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  box-shadow: var(--shadow-sm);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 0 0 1px rgba(255, 255, 255, 0.04);
+}
+
+/* RipeNet gets a larger circular container */
+#projects-card-ripenet .project-card-icon {
+  width: 64px;
+  height: 64px;
 }
 
 .project-card-icon img {
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  object-fit: cover;
 }
 
 .project-card-title {
