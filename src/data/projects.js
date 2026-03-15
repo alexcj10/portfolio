@@ -101,7 +101,7 @@ The system identifies Apple, Banana, Mango, Orange, Papaya, and Pineapple. Featu
     color: '#10b981',
     gradient: 'linear-gradient(135deg, #10b981, #34d399)',
     icon: '/assets/ripenet.png',
-    logoScale: 1,
+    logoScale: 1.8,
   },
 ];
 

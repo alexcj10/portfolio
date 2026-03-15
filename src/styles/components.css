@@ -448,6 +448,7 @@
 #projects-card-ripenet .project-card-icon {
   width: 64px;
   height: 64px;
+  background: transparent;
 }
 
 .project-card-icon img {
