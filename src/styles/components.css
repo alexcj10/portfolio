@@ -701,6 +701,7 @@
   overflow: hidden;
   position: relative;
   box-shadow: var(--shadow-lg); /* Nice drop shadow */
+  -webkit-overflow-scrolling: touch;
 }
 .demo-toolbar {
   display: flex;
@@ -729,16 +730,24 @@
   margin-left: var(--space-4);
   margin-right: var(--space-4);
 }
-.demo-iframe {
+.demo-iframe-wrapper {
   width: 100%;
   height: 600px;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+}
+.demo-iframe {
+  width: 100%;
+  height: 100%;
   border: none;
   background: var(--bg-primary);
+  display: block;
 }
 
 @media (max-width: 768px) {
-  .demo-iframe {
-    height: 400px;
+  .demo-iframe-wrapper {
+    height: 75vh;
+    min-height: 500px;
   }
 }
 

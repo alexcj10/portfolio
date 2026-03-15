@@ -68,15 +68,17 @@ export function renderProjectDetail(params) {
             <span class="demo-dot demo-dot-green"></span>
             <span class="demo-toolbar-url">${project.liveUrl.replace('https://', '')}</span>
           </div>
-          <iframe
-            class="demo-iframe"
-            src="${project.liveUrl}"
-            title="${project.name} Live Demo"
-            loading="lazy"
-            allow="clipboard-write"
-            sandbox="allow-scripts allow-same-origin allow-popups allow-forms allow-modals"
-            id="demo-iframe-${project.id}"
-          ></iframe>
+          <div class="demo-iframe-wrapper">
+            <iframe
+              class="demo-iframe"
+              src="${project.liveUrl}"
+              title="${project.name} Live Demo"
+              loading="lazy"
+              allow="clipboard-write"
+              sandbox="allow-scripts allow-same-origin allow-popups allow-forms allow-modals"
+              id="demo-iframe-${project.id}"
+            ></iframe>
+          </div>
         </div>
       </div>
     </section>
