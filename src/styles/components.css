@@ -470,9 +470,10 @@
   flex-shrink: 0;
 }
 
-/* Klyo gets a white circular background */
-#projects-card-klyo .project-card-icon {
+/* Klyo gets a white rounded-square background */
+#projects-card-klyo .project-card-icon, #project-card-klyo .project-card-icon {
   background: #ffffff;
+  border-radius: var(--radius-md);
 }
 
 
@@ -502,6 +503,10 @@
 .project-card-body {
   padding: var(--space-4) var(--space-6) var(--space-6);
   margin-top: auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--space-4);
 }
 
 .project-card-highlight {
@@ -512,7 +517,6 @@
   background: var(--bg-hover);
   border: 1px solid var(--border-secondary);
   border-radius: var(--radius-md);
-  margin-bottom: var(--space-4);
   font-size: var(--text-sm);
   font-weight: var(--weight-medium);
   color: var(--text-primary);
