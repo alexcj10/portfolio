@@ -100,8 +100,8 @@ The system identifies Apple, Banana, Mango, Orange, Papaya, and Pineapple. Featu
     githubUrl: 'https://github.com/alexcj10/ripenet',
     color: '#10b981',
     gradient: 'linear-gradient(135deg, #10b981, #34d399)',
-    icon: '/assets/ripenet.png',
-    logoScale: 1.8,
+    icon: '/assets/ripenet.svg',
+    logoScale: 1,
   },
 ];
 
