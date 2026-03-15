@@ -25,7 +25,7 @@ All data is stored locally using IndexedDB — no cloud servers, your data never
     githubUrl: 'https://github.com/alexcj10/Quillon',
     color: '#6366f1',
     gradient: 'linear-gradient(135deg, #6366f1, #818cf8)',
-    icon: '📝',
+    icon: 'src/assets/letter-q.png',
   },
   {
     id: 'chatlytics',
@@ -49,7 +49,7 @@ The Conversation Role Analysis system maps behavioral personas — Initiator, Re
     githubUrl: 'https://github.com/alexcj10/chatlytics',
     color: '#a855f7',
     gradient: 'linear-gradient(135deg, #a855f7, #c084fc)',
-    icon: '💬',
+    icon: 'src/assets/chatlytics (1).png',
   },
   {
     id: 'klyo',
@@ -73,7 +73,7 @@ Includes a **GitHub-style activity heatmap**, productivity mood tracking with bu
     githubUrl: 'https://github.com/alexcj10/klyo',
     color: '#ec4899',
     gradient: 'linear-gradient(135deg, #ec4899, #f472b6)',
-    icon: '🗓️',
+    icon: 'src/assets/klyo (1).png',
   },
   {
     id: 'ripenet',
@@ -97,7 +97,7 @@ The system identifies Apple, Banana, Mango, Orange, Papaya, and Pineapple. Featu
     githubUrl: 'https://github.com/alexcj10/ripenet',
     color: '#10b981',
     gradient: 'linear-gradient(135deg, #10b981, #34d399)',
-    icon: '🍎',
+    icon: 'src/assets/ripenet.png',
   },
 ];
 

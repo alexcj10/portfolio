@@ -24,10 +24,12 @@ export function renderProjects() {
           ${projects.map((p, i) => `
             <a href="#/project/${p.id}" class="project-card reveal reveal-delay-${i + 1}" id="projects-card-${p.id}">
               <div class="project-card-header">
-                <div class="project-card-icon" style="background: ${p.gradient}; color: white;">
-                  ${p.icon}
+                <div class="project-card-logo-row">
+                  <div class="project-card-icon">
+                    <img src="${p.icon}" alt="${p.name} logo">
+                  </div>
+                  <h3 class="project-card-title">${p.name}</h3>
                 </div>
-                <h3 class="project-card-title">${p.name}</h3>
                 <p class="project-card-desc">${p.tagline}</p>
               </div>
               <div class="project-card-body">

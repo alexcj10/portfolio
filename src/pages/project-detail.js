@@ -33,10 +33,6 @@ export function renderProjectDetail(params) {
   return `
     <!-- Project Hero -->
     <section class="project-hero">
-      <div class="project-hero-bg">
-        <div class="project-hero-orb" style="width: 500px; height: 500px; background: ${project.color}; top: -20%; right: -10%; animation: orbFloat1 20s ease-in-out infinite;"></div>
-        <div class="project-hero-orb" style="width: 300px; height: 300px; background: ${project.color}; bottom: -10%; left: 20%; animation: orbFloat2 25s ease-in-out infinite; opacity: 0.1;"></div>
-      </div>
       <div class="container project-hero-content">
         <a href="#/projects" class="project-hero-back reveal">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
