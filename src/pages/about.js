@@ -39,10 +39,11 @@ export function renderAbout() {
         <div class="about-grid" style="margin-top: var(--space-16);">
           <div class="about-bio reveal">
             <p>
-              I'm <strong>Alexchandar Joshva</strong> — an ML engineer and prompt engineering specialist.
-              I don't just build models — I build complete products that ship. From designing multi-stage
-              RAG pipelines to training EfficientNet backbones for production, I work across the entire
-              ML lifecycle.
+              I'm <strong>Alexchandar Joshva</strong> — a recent graduate and aspiring ML & AI Engineer. 
+              My core focus is on the intelligence behind the application. From designing multi-stage 
+              RAG pipelines to training EfficientNet computer vision models, my passion lies in 
+              machine learning architecture. While I leverage AI to rapidly build and style my frontends, 
+              I design and engineer the ML backends from the ground up.
             </p>
             <p>
               My philosophy is simple: <em>the best AI is the one that makes people's lives genuinely easier.</em>

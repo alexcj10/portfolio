@@ -117,7 +117,7 @@ export const profile = {
   name: 'Alexcj',
   fullName: 'Alexchandar Joshva',
   tagline: 'Building intelligent systems that think, analyze, and adapt.',
-  bio: `I'm a Machine Learning engineer and Prompt Engineering specialist who builds products people actually use. From RAG-powered note apps to deep learning fruit analyzers — I ship full-stack AI products end-to-end.
+  bio: `I'm a recent graduate and aspiring Machine Learning & AI Engineer. My focus is entirely on the intelligence behind the application—from complex RAG pipelines to deep learning fruit analyzers. I use AI to rapidly prototype my frontends ("vibe coding"), allowing me to ship complete products while dedicating my expertise to the ML architecture.
 
 Every project I build combines solid ML fundamentals with beautiful, user-centric interfaces. I believe the best AI isn't the most complex — it's the one that makes people's lives genuinely easier.`,
   github: 'https://github.com/alexcj10',

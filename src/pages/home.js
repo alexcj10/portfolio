@@ -22,8 +22,7 @@ export function renderHome() {
           I build <span class="text-gradient">intelligent</span> systems.
         </h1>
         <p class="hero-tagline">
-          ML Engineer & Prompt Engineering Specialist — shipping full-stack AI products
-          from RAG-powered apps to deep learning computer vision systems.
+          Aspiring ML & AI Engineer — a recent graduate focused on building intelligent systems. I specialize in ML architecture, from RAG pipelines to deep learning models, leveraging AI to bring the frontends to life.
         </p>
         <div class="hero-cta">
           <a href="#/projects" class="btn btn-primary">
