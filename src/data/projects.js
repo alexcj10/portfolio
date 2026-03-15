@@ -32,18 +32,18 @@ Experience true command-driven workflows with a powerful hyper-architect interfa
     id: 'chatlytics',
     name: 'Chatlytics',
     tagline: 'Transform your WhatsApp chats into actionable insights.',
-    description: `A powerful web application that transforms your WhatsApp chat exports into insightful analytics and beautiful visualizations. Upload your chat file and discover patterns in your conversations with **19+ analytics metrics**.
+    description: `A modern web application that transforms your WhatsApp chat exports into insightful analytics and beautiful visualizations. Upload your chat file and discover patterns in your conversations with 19+ analytics metrics.
 
-Features advanced ML capabilities including **VADER sentiment analysis** with custom Hinglish lexicon (+300 words), **LDA topic modeling** for unsupervised theme discovery, **Isolation Forest anomaly detection**, and a mathematical **Chat Health Score** formula.
+Features advanced ML capabilities including **VADER sentiment analysis** augmented with a custom **Hinglish/Roman-Hindi Lexicon** to handle code-switching. It leverages **LDA (Latent Dirichlet Allocation)** for unsupervised topic modeling to discover prominent themes.
 
-The Conversation Role Analysis system maps behavioral personas — Initiator, Responder, Driver, Broadcaster, Listener, and Night Owl — using multi-factor activity heatmaps and response latency patterns.`,
+Our algorithmic suite includes a sophisticated **Chat Health Score** calculating conversational fitness via a mathematical formula (combining sentiment, engagement, response, and balance), along with **Isolation Forest** anomaly detection using a custom Z-Score to pinpoint meaningful statistical spikes or drops in activity.`,
     features: [
-      { icon: '📊', title: 'Core Analytics', desc: 'Total messages, words, media, links, and most active users across timelines' },
-      { icon: '🎭', title: 'Sentiment Analysis', desc: 'VADER engine with custom Hinglish/Roman-Hindi lexicon for Indian chat contexts' },
-      { icon: '🔍', title: 'Topic Modeling', desc: 'LDA-based unsupervised theme discovery with temporal evolution tracking' },
-      { icon: '🏥', title: 'Chat Health Score', desc: 'Mathematical formula combining sentiment, engagement, response, and balance metrics' },
-      { icon: '🚨', title: 'Anomaly Detection', desc: 'Isolation Forest outlier detection with Z-Score significance scoring' },
-      { icon: '👤', title: 'Role Analysis', desc: '6 behavioral personas mapped from activity heatmaps and latency patterns' },
+      { icon: '📊', title: 'Deep Analytics', desc: 'Monitor daily, weekly, monthly, quarterly and yearly trends alongside basic stats' },
+      { icon: '🎭', title: 'Hinglish Sentiment', desc: 'Custom VADER engine processing 300+ Hinglish/Roman-Hindi terms for local context' },
+      { icon: '🔍', title: 'Topic Discovery', desc: 'LDA-based unsupervised theme extraction with temporal evolution tracking' },
+      { icon: '🏥', title: 'Chat Health Algorithim', desc: 'Mathematical modeling of conversational fitness: Sentiment, Engagement, Response, Balance' },
+      { icon: '🚨', title: 'Anomaly Detection', desc: 'Isolation forest identifying distinct statistical spikes and drops mapped via custom Z-scores' },
+      { icon: '👤', title: 'Role Mapping (CRA)', desc: 'Identifies 6 behavioral personas: Initiator, Responder, Driver, Broadcaster, Listener, & Night Owl' },
     ],
     techStack: ['Next.js', 'TypeScript', 'FastAPI', 'Python', 'VADER', 'LDA', 'scikit-learn', 'Isolation Forest'],
     liveUrl: 'https://chatlytics.netlify.app',
@@ -84,16 +84,16 @@ The dynamic calendar offers Month, Week, Day, and Year views with deep navigatio
     tagline: 'End-to-end deep learning for fruit analysis.',
     description: `An end-to-end computer vision suite for fruit species identification, ripeness classification, and shelf-life estimation using deep learning. The core innovation is the transition from discrete classification to **continuous regression**, modeling shelf-life as a time-based value in days.
 
-**RipeNet V2** utilizes a **Multi-Task Learning (MTL) architecture** where a single EfficientNet-B0 backbone processes identity, classification, and regression simultaneously — reducing inference latency by over 50%.
+**RipeNet V2** utilizes a **Multi-Task Learning (MTL) architecture** where a single EfficientNet-B0 backbone processes identity, classification, and regression simultaneously. This architecture achieves **~2.3x faster** inference and a **10.3% error reduction (1.53 MAE)** on external benchmarks compared to the V1 sequential baseline.
 
-The system identifies Apple, Banana, Mango, Orange, Papaya, and Pineapple. Features a **Fruit Vault** for local scan history, CLI tool for developers, and a deployed API on Hugging Face Spaces with 16GB RAM for rapid inference.`,
+For developers and power users, RipeNet offers a **Premium CLI Tool** (\`pip install .\`) for instant terminal scanning, and a lightning-fast API deployed on Hugging Face Spaces (via Docker). The system identifies 6 fruits: Apple, Banana, Mango, Orange, Papaya, and Pineapple.`,
     features: [
-      { icon: '🔬', title: 'Multi-Task Learning', desc: 'Single EfficientNet-B0 backbone for identity, classification, and regression simultaneously' },
-      { icon: '📅', title: 'Shelf-Life Prediction', desc: 'Continuous regression predicting remaining days instead of static categories' },
-      { icon: '🍎', title: 'Species Identification', desc: 'Supports Apple, Banana, Mango, Orange, Papaya, and Pineapple classification' },
+      { icon: '🔬', title: 'Multi-Task Learning', desc: 'Single EfficientNet-B0 backbone for identity (77.5%), classification (70.8%), and regression simultaneously' },
+      { icon: '📅', title: 'Shelf-Life Prediction', desc: 'Continuous regression predicting remaining days (1.53 MAE) instead of static categories' },
+      { icon: '🍎', title: 'Roboust Validation', desc: 'Stress-tested on independent 120-image external benchmark to ensure production generalization' },
       { icon: '💾', title: 'Fruit Vault', desc: 'Local browser storage for last 10 scans with IndexedDB — privacy first' },
-      { icon: '⚡', title: 'CLI & API', desc: 'Premium CLI tool and instant API access for developers and power users' },
-      { icon: '📊', title: 'Validated Metrics', desc: 'Benchmarked with MAE and RMSE against external validation datasets' },
+      { icon: '⚡', title: 'CLI & API', desc: 'Premium installable CLI tool (ripenet) and instant generic API access via cURL' },
+      { icon: '📊', title: 'Data Strategy', desc: 'Trained on ~10,000 images with negative label jittering to model expiration depth beyond 0 days' },
     ],
     techStack: ['Python', 'FastAPI', 'EfficientNet-B0', 'TensorFlow', 'React', 'Vite', 'Docker', 'Hugging Face'],
     liveUrl: 'https://ripenet.vercel.app',
