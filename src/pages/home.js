@@ -49,7 +49,7 @@ export function renderHome() {
               <div class="project-card-header">
                 <div class="project-card-logo-row">
                   <div class="project-card-icon">
-                    <img src="${p.icon}" alt="${p.name} logo">
+                    <img src="${p.icon}" alt="${p.name} logo" style="transform: scale(${p.logoScale || 1});">
                   </div>
                   <h3 class="project-card-title">${p.name}</h3>
                 </div>
