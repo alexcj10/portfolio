@@ -30,8 +30,8 @@ export function renderAbout() {
         <!-- Header -->
         <div class="reveal">
           <p class="section-label">About</p>
-          <h1 class="section-title" style="font-size: var(--text-5xl);">
-            I craft <span class="text-gradient">AI-powered</span> products<br/>people actually use.
+          <h1 class="section-title" style="font-size: var(--text-5xl); line-height: 1.15; text-wrap: balance;">
+            Engineering <span class="text-gradient">intelligent</span> ML solutions.
           </h1>
         </div>
 
@@ -40,10 +40,10 @@ export function renderAbout() {
           <div class="about-bio reveal">
             <p>
               I'm <strong>Alexchandar Joshva</strong> — a recent graduate and aspiring ML & AI Engineer. 
-              My core focus is on the intelligence behind the application. From designing multi-stage 
-              RAG pipelines to training EfficientNet computer vision models, my passion lies in 
-              machine learning architecture. While I leverage AI to rapidly build and style my frontends, 
-              I design and engineer the ML backends from the ground up.
+              My core focus is on the intelligence behind the application. From training custom 
+              sentiment analysis classifiers to benchmarking EfficientNet computer vision models, my passion lies in 
+              applied machine learning. While I leverage AI to rapidly build my supporting web platforms, 
+              I design and engineer the core ML models from the ground up.
             </p>
             <p>
               My philosophy is simple: <em>the best AI is the one that makes people's lives genuinely easier.</em>

@@ -22,7 +22,7 @@ export function renderHome() {
           I build <span class="text-gradient">intelligent</span> systems.
         </h1>
         <p class="hero-tagline">
-          Aspiring ML & AI Engineer — a recent graduate focused on building intelligent systems. I specialize in ML architecture, from RAG pipelines to deep learning models, leveraging AI to bring the frontends to life.
+          Aspiring ML & AI Engineer — a recent graduate focused on building intelligent systems. I specialize in training and evaluating complex ML models, leveraging AI to bring my supporting frontends and applications to life.
         </p>
         <div class="hero-cta">
           <a href="#/projects" class="btn btn-primary">

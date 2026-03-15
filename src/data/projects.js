@@ -7,9 +7,9 @@ export const projects = [
     id: 'quillon',
     name: 'Quillon',
     tagline: 'Tag it. Find it. Done.',
-    description: `**Quillon** is a modern, lightweight, and intuitive note-taking application designed for speed and efficiency. It uses **Smart RAG**, **Commands**, and **Intelligent Tags** to capture, manage, and structure your notes effortlessly.
+    description: `**Quillon** is a modern, lightweight, and intuitive note-taking application designed for speed and efficiency. It uses **Prompt Engineering**, **Commands**, and **Intelligent Tags** to capture, manage, and structure your notes effortlessly.
 
-The heart of Quillon is **Pownin**, an Advanced AI powered by a 5-stage retrieval pipeline featuring Query Expansion, Oracle Reranking, Context Chaining, Keyword Sniper, and Reflection Core. Interact directly with the AI via the fast \`@pai-\` command for instant text or rich markdown responses.
+The heart of Quillon is **Pownin**, an Advanced AI powered by an intelligent querying pipeline featuring Context Chaining and Keyword Snipping. Interact directly with the AI via the fast \`@pai-\` command for instant text or rich markdown responses.
 
 Experience true command-driven workflows with a powerful hyper-architect interface (\`@new-\`), dynamic nodes, instantaneous math evaluation, 100+ language translations, an intelligent Pomodoro timer, and a Zen Quiz Mode — all while keeping your data **100% locally secure** using IndexedDB.`,
     features: [
@@ -20,7 +20,7 @@ Experience true command-driven workflows with a powerful hyper-architect interfa
       { icon: '🎵', title: 'Sound & Productivity', desc: 'Haptic audio feedback, Pomodoro timer, and an automated Zen Quiz mode' },
       { icon: '🔒', title: 'Boundless Local Storage', desc: 'Zero cloud servers—uncapped IndexedDB capacity scaling with your device constraints' },
     ],
-    techStack: ['React', 'TypeScript', 'Vite', 'Smart RAG', 'IndexedDB', 'CSS'],
+    techStack: ['React', 'TypeScript', 'Vite', 'AI Models', 'IndexedDB', 'CSS'],
     liveUrl: 'https://quillon.netlify.app',
     githubUrl: 'https://github.com/alexcj10/Quillon',
     color: '#6366f1',
@@ -117,7 +117,7 @@ export const profile = {
   name: 'Alexcj',
   fullName: 'Alexchandar Joshva',
   tagline: 'Building intelligent systems that think, analyze, and adapt.',
-  bio: `I'm a recent graduate and aspiring Machine Learning & AI Engineer. My focus is entirely on the intelligence behind the application—from complex RAG pipelines to deep learning fruit analyzers. I use AI to rapidly prototype my frontends ("vibe coding"), allowing me to ship complete products while dedicating my expertise to the ML architecture.
+  bio: `I'm a recent graduate and aspiring Machine Learning & AI Engineer. My focus is entirely on the intelligence behind the application—from sentiment analysis classifiers to deep learning computer vision models. I use AI to rapidly prototype my application frontends ("vibe coding"), allowing me to ship complete products while dedicating my deep technical expertise to the core machine learning models.
 
 Every project I build combines solid ML fundamentals with beautiful, user-centric interfaces. I believe the best AI isn't the most complex — it's the one that makes people's lives genuinely easier.`,
   github: 'https://github.com/alexcj10',
