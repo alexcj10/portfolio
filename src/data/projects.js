@@ -82,7 +82,7 @@ The dynamic calendar offers Month, Week, Day, and Year views with deep navigatio
     color: '#ec4899',
     gradient: 'linear-gradient(135deg, #ec4899, #f472b6)',
     icon: '/assets/klyo.png',
-    logoScale: 0.85,
+    logoScale: 0.75,
   },
   {
     id: 'ripenet',

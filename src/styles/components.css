@@ -562,7 +562,7 @@
 #projects-card-klyo .project-card-icon,
 #project-card-klyo .project-card-icon {
   background: #ffffff;
-  border-radius: var(--radius-md);
+  border-radius: 50%;
 }
 
 
