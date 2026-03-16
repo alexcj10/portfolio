@@ -6,18 +6,13 @@
 export function initCoconutGame() {
   const container = document.getElementById('coconut-game');
   const playBtn = document.getElementById('play-coconut');
-  const statusMsg = document.getElementById('game-status');
   const slots = document.querySelectorAll('.coconut-slot');
   const shells = document.querySelectorAll('.coconut-shell');
   if (!container || !playBtn) return;
 
   let isPlaying = false;
-  let prizeIndex = 0; // The diamond is at index 0 by default in HTML
+  let prizeIndex = 0;
   let currentPositions = [0, 1, 2];
-
-  function updateStatus(msg) {
-    if (statusMsg) statusMsg.innerText = msg;
-  }
 
   async function wait(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
@@ -26,46 +21,44 @@ export function initCoconutGame() {
   async function shuffle() {
     isPlaying = true;
     playBtn.disabled = true;
-    updateStatus('Coconuts descending...');
 
     // 1. Cover slots
     shells.forEach(shell => shell.classList.add('covering'));
     await wait(700);
 
-    // 2. Hide play button
+    // 2. Hide play button during shuffle
     playBtn.style.opacity = '0';
     playBtn.style.pointerEvents = 'none';
 
-    // 3. Shuffle logic (Swap 5-7 times)
-    updateStatus('Shuffling...');
+    // 3. Shuffle logic
     const shuffleSteps = 6;
-    
+
     for (let i = 0; i < shuffleSteps; i++) {
       // Pick two random unique indices to swap
       let idx1 = Math.floor(Math.random() * 3);
       let idx2 = (idx1 + Math.floor(Math.random() * 2) + 1) % 3;
-      
+
       // Visual Swap
       const slot1 = slots[currentPositions[idx1]];
       const slot2 = slots[currentPositions[idx2]];
-      
+
       // Calculate positions relative to each other
       const rect1 = slot1.getBoundingClientRect();
       const rect2 = slot2.getBoundingClientRect();
       const deltaX = rect2.left - rect1.left;
-      
+
       // Apply movement
       slot1.style.transform = `translateX(${deltaX}px)`;
       slot2.style.transform = `translateX(${-deltaX}px)`;
-      
+
       await wait(600);
-      
+
       // Finalize the swap in the DOM/State
       slot1.style.transition = 'none';
       slot2.style.transition = 'none';
       slot1.style.transform = '';
       slot2.style.transform = '';
-      
+
       // Swap order in the currentPositions array
       const tempSlot = currentPositions[idx1];
       currentPositions[idx1] = currentPositions[idx2];
@@ -84,8 +77,6 @@ export function initCoconutGame() {
       slot2.style.transition = '';
     }
 
-    updateStatus('Pick a coconut!');
-    
     // Enable clicking on shells
     shells.forEach((shell, index) => {
       shell.onclick = () => handleGuess(index);
@@ -99,16 +90,13 @@ export function initCoconutGame() {
     // Reveal all shells
     shells.forEach((shell, idx) => {
       shell.onclick = null; // Disable further clicks
-      
+
       // The animation "opens" and "falls"
       shell.classList.add('open-fall');
     });
 
     if (hasPrize) {
-      updateStatus('✨ BRAVO! YOU FOUND IT! ✨');
       clickedSlot.classList.add('winner-glow');
-    } else {
-      updateStatus('❌ Oops! Better luck next time.');
     }
 
     // Reset game after delay
@@ -126,7 +114,6 @@ export function initCoconutGame() {
     playBtn.disabled = false;
     playBtn.style.opacity = '1';
     playBtn.style.pointerEvents = 'auto';
-    updateStatus('Watch the objects closely!');
     isPlaying = false;
   }
 

@@ -134,18 +134,13 @@ export function renderProjectDetail(params) {
     <section class="section-nav-arcade">
       <div class="container">
         <div class="project-nav-arcade" id="coconut-game">
-          <!-- Prev Button -->
-          <a href="#/project/${prevProject.id}" class="nav-arcade-btn prev">
-            <div class="btn-icon">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
-            </div>
-            <div class="btn-text">
-              <span class="btn-label">Previous</span>
-              <span class="btn-name">${prevProject.name}</span>
-            </div>
+          <!-- Prev Button (Original Style) -->
+          <a href="#/project/${prevProject.id}" class="project-nav-item">
+            <div class="project-nav-label">← Previous</div>
+            <div class="project-nav-name">${prevProject.name}</div>
           </a>
 
-          <!-- Coconut Shuffle Panel -->
+          <!-- Professional Coconut Shuffle Panel -->
           <div class="arcade-bridge-panel">
             <div class="coconut-stage">
               <div class="coconut-slots">
@@ -165,19 +160,13 @@ export function renderProjectDetail(params) {
             </div>
             <div class="arcade-ui">
               <button class="arcade-play-btn" id="play-coconut">SHUFFLE & GUESS</button>
-              <div class="arcade-hint" id="game-status">Watch the objects closely!</div>
             </div>
           </div>
 
-          <!-- Next Button -->
-          <a href="#/project/${nextProject.id}" class="nav-arcade-btn next">
-            <div class="btn-text">
-              <span class="btn-label">Next</span>
-              <span class="btn-name">${nextProject.name}</span>
-            </div>
-            <div class="btn-icon">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-            </div>
+          <!-- Next Button (Original Style) -->
+          <a href="#/project/${nextProject.id}" class="project-nav-item next">
+            <div class="project-nav-label">Next →</div>
+            <div class="project-nav-name">${nextProject.name}</div>
           </a>
         </div>
       </div>
