@@ -97,7 +97,7 @@ export function renderProjectDetail(params) {
     </section>
 
     <!-- Key Features -->
-    <section class="section" style="padding-top: var(--space-8); background: var(--bg-secondary); transition: background var(--duration-slow) var(--ease-smooth);">
+    <section class="section" style="padding-top: var(--space-10); background: var(--bg-secondary); transition: background var(--duration-slow) var(--ease-smooth);">
       <div class="container">
         <div class="reveal section-header">
           <p class="section-label">Features</p>
@@ -118,7 +118,7 @@ export function renderProjectDetail(params) {
     </section>
 
     <!-- Tech Stack -->
-    <section class="section tech-stack-section" style="padding-top: var(--space-8);">
+    <section class="section tech-stack-section" style="padding-top: var(--space-10);">
       <div class="container">
         <div class="reveal section-header">
           <p class="section-label">Tech Stack</p>
