@@ -3,9 +3,9 @@
    ======================================== */
 
 :root {
-  /* Typography - Apple SF Pro Stack */
-  --font-display: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-  --font-body: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  /* Typography - Instrument Stack (Claude Aesthetic) */
+  --font-display: "Instrument Serif", serif;
+  --font-body: "Instrument Sans", sans-serif;
   --font-mono: "SF Mono", ui-monospace, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 
   /* Font Sizes — Apple HIG */

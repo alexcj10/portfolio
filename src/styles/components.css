@@ -10,7 +10,8 @@
   right: 0;
   z-index: 1000;
   height: var(--nav-height);
-  pointer-events: none; /* Let clicks pass through to container */
+  pointer-events: none;
+  /* Let clicks pass through to container */
 }
 
 .navbar-inner {
@@ -27,7 +28,8 @@
   border: 1px solid var(--nav-border);
   border-radius: var(--radius-full);
   box-shadow: var(--shadow-md);
-  pointer-events: auto; /* Re-enable clicks for the island */
+  pointer-events: auto;
+  /* Re-enable clicks for the island */
 }
 
 .navbar-logo {
