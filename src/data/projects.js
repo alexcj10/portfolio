@@ -2,30 +2,7 @@
 // PROJECT DATA
 // ========================================
 
-export interface ProjectFeature {
-  icon: string;
-  title: string;
-  desc: string;
-}
-
-export interface Project {
-  id: string;
-  name: string;
-  tagline: string;
-  shortSummary: string;
-  highlight: string;
-  description: string;
-  features: ProjectFeature[];
-  techStack: string[];
-  liveUrl: string;
-  githubUrl: string;
-  color: string;
-  gradient: string;
-  icon: string;
-  logoScale?: number;
-}
-
-export const projects: Project[] = [
+export const projects = [
   {
     id: 'quillon',
     name: 'Quillon',
