@@ -10,7 +10,6 @@
   right: 0;
   z-index: 1000;
   height: var(--nav-height);
-  padding: 0 var(--space-6);
   pointer-events: none; /* Let clicks pass through to container */
 }
 
