@@ -750,10 +750,26 @@
   border: 1px solid var(--border-secondary);
   overflow: hidden;
   display: flex;
-  flex-direction: column;
+  align-items: center;
   justify-content: center;
   box-shadow: var(--shadow-sm);
   transition: all 0.5s var(--ease-smooth);
+  isolation: isolate; /* Create new stacking context */
+}
+
+.arcade-bridge-panel::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0);
+  z-index: 5;
+  pointer-events: none;
+  transition: all 0.8s var(--ease-smooth);
+}
+
+.arcade-bridge-panel.ready-stage::before,
+.arcade-bridge-panel.playing-stage::before {
+  background: rgba(0, 0, 0, 0.4);
 }
 
 .arcade-bridge-panel:hover {
@@ -762,19 +778,30 @@
 }
 
 .coconut-stage {
-  height: 60px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  max-width: 500px;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0 var(--space-6);
-  margin-top: 5px;
+  z-index: 2;
+  transition: filter 0.5s ease;
+  /* Below overlay until covered */
+}
+
+.arcade-bridge-panel.playing-stage .coconut-stage {
+  z-index: 15; /* Top level when playing */
 }
 
 .coconut-slots {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  gap: var(--space-12);
   width: 100%;
-  max-width: 440px;
+  max-width: 500px;
   position: relative;
 }
 
@@ -866,24 +893,26 @@
 }
 
 .arcade-ui {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding-bottom: 10px;
+  position: absolute;
+  top: var(--space-4);
+  right: var(--space-4);
+  z-index: 20; /* Ensure it's above the ::before overlay (z-index 5) */
+  pointer-events: auto;
 }
 
 .arcade-play-btn {
-  background: var(--text-primary);
-  color: var(--bg-primary);
-  padding: 8px 20px;
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border-radius: var(--radius-full);
-  font-size: 11px;
-  font-weight: var(--weight-bold);
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
   transition: all 0.4s var(--ease-spring);
-  border: 1px solid transparent;
+  border: 1px solid var(--border-secondary);
+  box-shadow: var(--shadow-sm);
+  cursor: pointer;
 }
 
 .arcade-play-btn:hover {

@@ -14,6 +14,12 @@ export function initCoconutGame() {
   let prizeIndex = 0;
   let currentPositions = [0, 1, 2];
 
+  // Automated Intro: Show objects -> Dim -> Show Button
+  const introTimeout = setTimeout(() => {
+    const bridge = container.querySelector('.arcade-bridge-panel');
+    if (bridge) bridge.classList.add('ready-stage');
+  }, 1200);
+
   async function wait(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
   }
@@ -22,7 +28,12 @@ export function initCoconutGame() {
     isPlaying = true;
     playBtn.disabled = true;
 
-    // 1. Cover slots
+    // 1. Move stage to top so it's above the blur overlay
+    const bridge = container.querySelector('.arcade-bridge-panel');
+    bridge.classList.remove('ready-stage');
+    bridge.classList.add('playing-stage');
+    
+    // 2. Cover slots
     shells.forEach(shell => shell.classList.add('covering'));
     await wait(700);
 
@@ -111,6 +122,14 @@ export function initCoconutGame() {
       shell.onclick = null;
     });
     slots.forEach(slot => slot.classList.remove('winner-glow'));
+    const bridge = container.querySelector('.arcade-bridge-panel');
+    bridge.classList.remove('playing-stage');
+    
+    // Restore Ready state (Dim + Button) after a moment of clarity
+    setTimeout(() => {
+      if (!isPlaying) bridge.classList.add('ready-stage');
+    }, 1000);
+
     playBtn.disabled = false;
     playBtn.style.opacity = '1';
     playBtn.style.pointerEvents = 'auto';
@@ -121,6 +140,7 @@ export function initCoconutGame() {
 
   // Return cleanup
   return () => {
+    clearTimeout(introTimeout);
     playBtn.removeEventListener('click', shuffle);
   };
 }
