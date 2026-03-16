@@ -35,11 +35,20 @@
   /* For border beam */
 }
 
-/* Dark Mode Overrides */
 [data-theme="dark"] .navbar-inner {
   background: rgba(26, 25, 23, 0.4);
   border-color: rgba(49, 48, 44, 0.5);
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+}
+
+.navbar.menu-open .navbar-inner {
+  background: var(--bg-primary);
+  border-color: transparent;
+  box-shadow: none;
+}
+
+[data-theme="dark"] .navbar.menu-open .navbar-inner {
+  background: var(--bg-primary);
 }
 
 /* Border Beam Effect */
@@ -231,17 +240,15 @@
 .mobile-menu {
   display: none;
   position: fixed;
-  top: var(--nav-height);
+  top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background: var(--bg-glass-heavy);
-  backdrop-filter: saturate(180%) blur(40px);
-  -webkit-backdrop-filter: saturate(180%) blur(40px);
+  background: var(--bg-primary);
   z-index: 999;
-  padding: var(--space-8);
+  padding: calc(var(--nav-height) + var(--nav-top-margin) + var(--space-10)) var(--space-8) var(--space-8);
   flex-direction: column;
-  gap: var(--space-6);
+  gap: var(--space-8);
   animation: fadeIn var(--duration-normal) var(--ease-out);
 }
 

@@ -182,8 +182,12 @@ export class Router {
     const menu = document.getElementById('mobile-menu');
     if (btn && menu) {
       btn.addEventListener('click', () => {
-        btn.classList.toggle('active');
+        const isOpen = btn.classList.toggle('active');
         menu.classList.toggle('open');
+        const navbar = document.getElementById('navbar');
+        if (navbar) {
+          navbar.classList.toggle('menu-open', isOpen);
+        }
       });
 
       // Close menu on link click
