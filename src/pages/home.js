@@ -37,12 +37,12 @@ export function renderHome() {
     <!-- Featured Projects -->
     <section class="section" id="featured-projects">
       <div class="container">
-        <div class="reveal">
+        <div class="reveal section-header">
           <p class="section-label">Featured Work</p>
           <h2 class="section-title">Projects I've built.</h2>
           <p class="section-subtitle">Each one solves a real problem with AI-first thinking and beautiful interfaces.</p>
         </div>
-        <div class="projects-grid" style="margin-top: var(--space-12);">
+        <div class="projects-grid" style="margin-top: var(--space-10);">
           ${featuredProjects.map((p, i) => `
             <a href="#/project/${p.id}" class="project-card reveal reveal-delay-${i + 1}" id="project-card-${p.id}">
               <div class="project-card-header">
