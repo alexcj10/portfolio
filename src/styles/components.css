@@ -780,7 +780,7 @@
 
 [data-theme="light"] .arcade-bridge-panel.ready-stage::before,
 [data-theme="light"] .arcade-bridge-panel.playing-stage::before {
-  background: rgba(0, 0, 0, 0.08);
+  background: transparent;
 }
 
 .arcade-bridge-panel:hover {
