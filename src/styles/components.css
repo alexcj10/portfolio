@@ -757,6 +757,12 @@
   isolation: isolate; /* Create new stacking context */
 }
 
+[data-theme="light"] .arcade-bridge-panel {
+  background: #ffffff;
+  background-image: linear-gradient(135deg, #ffffff 0%, #f9f8f6 100%);
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.01), var(--shadow-sm);
+}
+
 .arcade-bridge-panel::before {
   content: '';
   position: absolute;
@@ -770,6 +776,11 @@
 .arcade-bridge-panel.ready-stage::before,
 .arcade-bridge-panel.playing-stage::before {
   background: rgba(0, 0, 0, 0.4);
+}
+
+[data-theme="light"] .arcade-bridge-panel.ready-stage::before,
+[data-theme="light"] .arcade-bridge-panel.playing-stage::before {
+  background: rgba(0, 0, 0, 0.08);
 }
 
 .arcade-bridge-panel:hover {
