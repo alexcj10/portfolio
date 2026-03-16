@@ -28,7 +28,7 @@ export function renderAbout() {
     <section class="section" style="padding-top: calc(var(--nav-height) + var(--space-16));">
       <div class="container">
         <!-- Header -->
-        <div class="reveal">
+        <div class="reveal section-header">
           <p class="section-label">About</p>
           <h1 class="section-title" style="font-size: var(--text-5xl); line-height: 1.15; text-wrap: balance;">
             Engineering <span class="text-gradient">intelligent</span> ML solutions.

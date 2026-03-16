@@ -86,7 +86,7 @@ export function renderProjectDetail(params) {
     <!-- Description -->
     <section class="section">
       <div class="container">
-        <div class="reveal" style="max-width: 720px;">
+        <div class="reveal section-header">
           <p class="section-label">Overview</p>
           <h2 class="section-title">About ${project.name}</h2>
           <div style="font-size: var(--text-lg); color: var(--text-secondary); line-height: 1.8; margin-top: var(--space-6);">
@@ -97,9 +97,9 @@ export function renderProjectDetail(params) {
     </section>
 
     <!-- Key Features -->
-    <section class="section" style="background: var(--bg-secondary); transition: background var(--duration-slow) var(--ease-smooth);">
+    <section class="section" style="padding-top: var(--space-8); background: var(--bg-secondary); transition: background var(--duration-slow) var(--ease-smooth);">
       <div class="container">
-        <div class="reveal">
+        <div class="reveal section-header">
           <p class="section-label">Features</p>
           <h2 class="section-title">What makes it special.</h2>
         </div>
@@ -118,9 +118,9 @@ export function renderProjectDetail(params) {
     </section>
 
     <!-- Tech Stack -->
-    <section class="tech-stack-section section">
+    <section class="section tech-stack-section" style="padding-top: var(--space-8);">
       <div class="container">
-        <div class="reveal">
+        <div class="reveal section-header">
           <p class="section-label">Tech Stack</p>
           <h2 class="section-title">Built with.</h2>
         </div>

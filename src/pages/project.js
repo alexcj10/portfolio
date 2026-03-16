@@ -9,7 +9,7 @@ export function renderProjects() {
     <section class="section" style="padding-top: var(--space-24);">
       <div class="container">
         <!-- Header -->
-        <div class="reveal">
+        <div class="reveal section-header">
           <p class="section-label">Projects</p>
           <h1 class="section-title" style="font-size: var(--text-5xl);">
             Things I've <span class="text-gradient">built</span>.
