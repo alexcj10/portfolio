@@ -1,9 +1,8 @@
 # Alexcj10 Portfolio
 
-This repository contains my personal portfolio website. The purpose of this project is to showcase my work, projects, and technical interests while I continue learning and building in the fields of Data Science, Artificial Intelligence, and modern web technologies.
+This repository contains my personal portfolio website. It is a space where I share the projects I am working on and document my learning journey in Data Science, Artificial Intelligence, and Machine Learning.
 
-The website presents information about me, the technologies I use, and the projects I am currently working on. It is designed to be simple, responsive, and easy to navigate so visitors can quickly explore my work and understand my technical background.
+The portfolio highlights my interests, experiments, and projects as I continue developing my skills and exploring ideas in AI and data-driven technologies. It is meant to give visitors a clear view of what I am currently learning and building.
 
-The portfolio is deployed online and can be accessed here:  
+You can view the live portfolio here:  
 https://alexcj10.vercel.app
-
