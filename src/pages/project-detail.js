@@ -56,7 +56,7 @@ export function renderProjectDetail(params) {
     <!-- Live Demo Embed -->
     <section class="demo-section">
       <div class="container">
-        <div class="reveal">
+        <div class="reveal section-header">
           <p class="section-label">Live Demo</p>
           <h2 class="section-title">Try it yourself.</h2>
           <p class="section-subtitle" style="margin-bottom: var(--space-8);">The full application is embedded below — interact with it right here.</p>

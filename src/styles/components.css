@@ -1054,6 +1054,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: var(--space-3);
+  justify-content: center;
 }
 
 /* Project Navigation */
