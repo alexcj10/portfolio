@@ -123,7 +123,7 @@ export class Router {
     return `
       <nav class="navbar" id="navbar">
         <div class="navbar-inner">
-          <a class="navbar-logo" href="#/">Alexcj<span class="text-gradient">.</span></a>
+          <a class="navbar-logo" href="#/">Alexcj10<span class="text-gradient">.</span></a>
           <div class="navbar-links">
             ${links.map(l => `
               <a class="navbar-link ${currentPath === l.path ? 'active' : ''}" href="#${l.path}">${l.label}</a>
@@ -153,7 +153,7 @@ export class Router {
       <footer class="footer">
         <div class="container footer-inner">
           <div class="footer-left">
-            <div class="footer-name">Alexcj<span class="text-gradient">.</span></div>
+            <div class="footer-name">Alexcj10<span class="text-gradient">.</span></div>
             <p>Building intelligent systems that think, analyze, and adapt.</p>
           </div>
           <div class="footer-links">
