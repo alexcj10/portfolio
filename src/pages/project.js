@@ -33,10 +33,7 @@ export function renderProjects() {
                 <p class="project-card-desc">${p.shortSummary || p.tagline}</p>
               </div>
               <div class="project-card-body">
-                <div class="project-card-highlight">
-                  <span class="highlight-icon">✨</span>
-                  <span class="highlight-text">${p.highlight}</span>
-                </div>
+
                 <span class="project-card-link">
                   View Project
                   <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>

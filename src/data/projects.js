@@ -8,7 +8,7 @@ export const projects = [
     name: 'Quillon',
     tagline: 'Tag it. Find it. Done.',
     shortSummary: 'A blazing-fast, command-driven note taking application powered by custom AI extraction pipelines and dynamic tagging.',
-    highlight: 'Powered by a 5-Stage AI Retrieval Pipeline',
+
     description: `**Quillon** is a modern, lightweight, and intuitive note-taking application designed for speed and efficiency. It uses **Prompt Engineering**, **Commands**, and **Intelligent Tags** to capture, manage, and structure your notes effortlessly.
 
 The heart of Quillon is **Pownin**, an Advanced AI powered by an intelligent querying pipeline featuring Context Chaining and Keyword Snipping. Interact directly with the AI via the fast \`@pai-\` command for instant text or rich markdown responses.
@@ -35,7 +35,7 @@ Experience true command-driven workflows with a powerful hyper-architect interfa
     name: 'Chatlytics',
     tagline: 'Transform your WhatsApp chats into actionable insights.',
     shortSummary: 'A powerful analytics engine discovering deep conversational patterns through unsupervised topic modeling and anomaly detection.',
-    highlight: 'Processes 19+ Analytics Metrics & Hinglish Sentiment',
+
     description: `A modern web application that transforms your WhatsApp chat exports into insightful analytics and beautiful visualizations. Upload your chat file and discover patterns in your conversations with 19+ analytics metrics.
 
 Features advanced ML capabilities including **VADER sentiment analysis** augmented with a custom **Hinglish/Roman-Hindi Lexicon** to handle code-switching. It leverages **LDA (Latent Dirichlet Allocation)** for unsupervised topic modeling to discover prominent themes.
@@ -62,7 +62,7 @@ Our algorithmic suite includes a sophisticated **Chat Health Score** calculating
     name: 'Klyo',
     tagline: 'The Intelligent Workspace. Plan smarter, burn out less.',
     shortSummary: 'A unified workspace and temporal-aware calendar designed to reduce cognitive load, track burnout, and streamline scheduling.',
-    highlight: 'Integrated with a 6-Agent AI Swarm',
+
     description: `Klyo isn't just a calendar; it's a unified environment designed to reduce cognitive load and keep you in the flow.
 
 Meet your executive elite team: a multi-specialist Swarm powered by **Hybrid RAG** (@crock, @coach, @analyst, @planner, @frog, and @historian). Features advanced **temporal intelligence** with year-aware filtering, strict timing precision, and context-aware scheduling.
@@ -89,7 +89,7 @@ The dynamic calendar offers Month, Week, Day, and Year views with deep navigatio
     name: 'RipeNet',
     tagline: 'End-to-end deep learning for fruit analysis.',
     shortSummary: 'An end-to-end computer vision suite using deep learning for fruit species identification and continuous shelf-life regression.',
-    highlight: 'Achieves 10.3% Error Reduction (1.53 MAE)',
+
     description: `An end-to-end computer vision suite for fruit species identification, ripeness classification, and shelf-life estimation using deep learning. The core innovation is the transition from discrete classification to **continuous regression**, modeling shelf-life as a time-based value in days.
 
 **RipeNet V2** utilizes a **Multi-Task Learning (MTL) architecture** where a single EfficientNet-B0 backbone processes identity, classification, and regression simultaneously. This architecture achieves **~2.3x faster** inference and a **10.3% error reduction (1.53 MAE)** on external benchmarks compared to the V1 sequential baseline.
