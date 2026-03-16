@@ -903,8 +903,8 @@
 .arcade-play-btn {
   background: var(--bg-primary);
   color: var(--text-primary);
-  width: 44px;
-  height: 44px;
+  width: 32px;
+  height: 32px;
   display: flex;
   align-items: center;
   justify-content: center;
