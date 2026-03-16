@@ -38,7 +38,7 @@ export function renderProjects() {
                   <span class="highlight-text">${p.highlight}</span>
                 </div>
                 <span class="project-card-link">
-                  View Details
+                  View Project
                   <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
                 </span>
               </div>
