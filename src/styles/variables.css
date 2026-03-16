@@ -71,7 +71,9 @@
 
   /* Layout */
   --max-width: 1200px;
-  --nav-height: 54px; /* Native Mac/iOS typical height */
+  --nav-height: 54px; 
+  --nav-inner-width: 720px;
+  --nav-top-margin: 24px;
   --section-padding: clamp(4rem, 10vw, 8rem);
 }
 

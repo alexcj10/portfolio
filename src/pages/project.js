@@ -6,7 +6,7 @@ import { projects } from '../data/projects.js';
 
 export function renderProjects() {
   return `
-    <section class="section" style="padding-top: calc(var(--nav-height) + var(--space-16));">
+    <section class="section" style="padding-top: var(--space-24);">
       <div class="container">
         <!-- Header -->
         <div class="reveal">

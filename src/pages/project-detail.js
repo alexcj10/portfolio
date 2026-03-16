@@ -8,7 +8,7 @@ export function renderProjectDetail(params) {
   const project = projects.find(p => p.id === params.id);
   if (!project) {
     return `
-      <section class="section" style="padding-top: calc(var(--nav-height) + var(--space-16)); text-align: center;">
+      <section class="section" style="padding-top: var(--space-16); text-align: center;">
         <div class="container">
           <h1 class="section-title">Project not found</h1>
           <a href="#/projects" class="btn btn-primary" style="margin-top: var(--space-8);">Back to Projects</a>

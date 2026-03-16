@@ -4,18 +4,14 @@
 
 /* --- NAVBAR --- */
 .navbar {
-  position: fixed;
-  top: 0;
+  position: absolute;
+  top: var(--nav-top-margin);
   left: 0;
   right: 0;
   z-index: 1000;
   height: var(--nav-height);
-  background: var(--nav-bg);
-  backdrop-filter: saturate(180%) blur(20px);
-  -webkit-backdrop-filter: saturate(180%) blur(20px);
-  border-bottom: 0.5px solid var(--nav-border);
-  transition: background var(--duration-normal) var(--ease-smooth),
-    border-color var(--duration-normal) var(--ease-smooth);
+  padding: 0 var(--space-6);
+  pointer-events: none; /* Let clicks pass through to container */
 }
 
 .navbar-inner {
@@ -23,9 +19,16 @@
   align-items: center;
   justify-content: space-between;
   height: 100%;
-  max-width: var(--max-width);
+  max-width: var(--nav-inner-width);
   margin: 0 auto;
   padding: 0 var(--space-6);
+  background: var(--nav-bg);
+  backdrop-filter: saturate(180%) blur(20px);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  border: 1px solid var(--nav-border);
+  border-radius: var(--radius-full);
+  box-shadow: var(--shadow-md);
+  pointer-events: auto; /* Re-enable clicks for the island */
 }
 
 .navbar-logo {
