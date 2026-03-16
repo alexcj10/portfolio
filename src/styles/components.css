@@ -782,14 +782,12 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 100%;
-  max-width: 500px;
+  width: auto; /* Shrink to fit content for perfect centering */
   display: flex;
   align-items: center;
   justify-content: center;
   z-index: 2;
-  transition: filter 0.5s ease;
-  /* Below overlay until covered */
+  transition: opacity 0.5s ease;
 }
 
 .arcade-bridge-panel.playing-stage .coconut-stage {
@@ -823,10 +821,10 @@
 
 .coconut-shell {
   position: absolute;
-  top: -5px;
+  top: 0;
   left: 0;
-  width: 70px;
-  height: 70px;
+  width: 100%;
+  height: 100%;
   
   /* 100% Real Graphics Asset */
   background-image: url('/assets/game/coconut.png');
@@ -834,13 +832,12 @@
   background-position: center;
   background-repeat: no-repeat;
   
-  /* Use filter for shadows to follow image alpha (no square borders) */
-  filter: drop-shadow(0 10px 15px rgba(0, 0, 0, 0.3));
+  /* Removed shadows to ensure maximum crispness and zero "blur" artifacts */
   
   z-index: 2;
   opacity: 0;
   transform: translateY(-100px) scale(0.9);
-  transition: transform 0.6s cubic-bezier(0.34, 1.56, 0.64, 1), opacity 0.4s ease, filter 0.3s ease;
+  transition: transform 0.6s cubic-bezier(0.34, 1.56, 0.64, 1), opacity 0.4s ease;
   pointer-events: none;
 }
 
@@ -855,7 +852,6 @@
 
 .coconut-shell.covering:hover {
   transform: translateY(-5px);
-  filter: drop-shadow(0 15px 25px rgba(0, 0, 0, 0.4));
 }
 
 /* Falling Animation */
