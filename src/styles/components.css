@@ -719,6 +719,212 @@
   }
 }
 
+/* --- COCONUT SHUFFLE ARCADE --- */
+.section-nav-arcade {
+  padding: var(--space-12) 0;
+  border-top: 1px solid var(--border-secondary);
+}
+
+.project-nav-arcade {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  height: 120px;
+}
+
+.nav-arcade-btn {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  padding: var(--space-4) var(--space-6);
+  background: var(--bg-card);
+  border: 1px solid var(--border-secondary);
+  border-radius: var(--radius-2xl);
+  text-decoration: none;
+  transition: all var(--duration-fast) var(--ease-out);
+  min-width: 220px;
+  flex-shrink: 0;
+  box-shadow: var(--shadow-sm);
+}
+
+.nav-arcade-btn:hover {
+  border-color: var(--accent-text);
+  box-shadow: 0 0 20px rgba(0, 122, 255, 0.1);
+  transform: translateY(-2px);
+}
+
+.btn-icon {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-lg);
+  background: var(--bg-tertiary);
+  color: var(--text-secondary);
+  transition: all var(--duration-fast) var(--ease-out);
+}
+
+.nav-arcade-btn:hover .btn-icon {
+  background: var(--accent-text);
+  color: white;
+}
+
+.btn-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.btn-label {
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--text-tertiary);
+  font-weight: var(--weight-bold);
+  margin-bottom: 2px;
+}
+
+.btn-name {
+  font-size: var(--text-lg);
+  font-weight: var(--weight-bold);
+  color: var(--text-primary);
+}
+
+/* Arcade Panel */
+.arcade-bridge-panel {
+  flex: 1;
+  height: 100%;
+  position: relative;
+  background: var(--bg-tertiary);
+  border-radius: var(--radius-2xl);
+  border: 1px dashed var(--border-secondary);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.coconut-stage {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 var(--space-10);
+  margin-top: -10px;
+}
+
+.coconut-slots {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  max-width: 400px;
+  position: relative;
+}
+
+.coconut-slot {
+  width: 60px;
+  height: 60px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.4s var(--ease-smooth);
+}
+
+.game-object {
+  font-size: 24px;
+  z-index: 1;
+  transition: opacity 0.3s ease;
+}
+
+.coconut-shell {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 60px;
+  height: 60px;
+  background: #5d4037; /* Coconut Brown */
+  border-radius: 50% 50% 10% 10%;
+  z-index: 2;
+  box-shadow: inset 0 -4px 10px rgba(0,0,0,0.3);
+  border: 2px solid #3e2723;
+  opacity: 0;
+  transform: translateY(-80px);
+  transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.coconut-shell.covering {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+  cursor: pointer;
+}
+
+/* Falling Animation */
+.coconut-shell.open-fall {
+  animation: fall-away 0.8s forwards;
+  pointer-events: none;
+}
+
+@keyframes fall-away {
+  0% { transform: scale(1) rotate(0); opacity: 1; }
+  20% { transform: scale(1.1) rotate(10deg); opacity: 1; }
+  100% { transform: translateY(200px) rotate(45deg) scale(0.8); opacity: 0; }
+}
+
+.arcade-ui {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  padding-bottom: 8px;
+}
+
+.arcade-play-btn {
+  background: var(--accent-text);
+  color: white;
+  padding: 6px 16px;
+  border-radius: var(--radius-full);
+  font-size: 11px;
+  font-weight: var(--weight-bold);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+
+.arcade-play-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(217, 119, 87, 0.3);
+}
+
+.arcade-play-btn:disabled {
+  background: var(--text-muted);
+  transform: none;
+  box-shadow: none;
+  cursor: not-allowed;
+}
+
+.arcade-hint {
+  font-size: 9px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--text-tertiary);
+}
+
+@media (max-width: 900px) {
+  .project-nav-arcade {
+    flex-direction: column;
+    height: auto;
+    padding: var(--space-6) 0;
+  }
+  .arcade-bridge-panel {
+    width: 100%;
+    height: 160px;
+    padding: var(--space-4) 0;
+  }
+  .nav-arcade-btn { width: 100%; }
+}
 .highlight-icon {
   font-size: 16px;
 }

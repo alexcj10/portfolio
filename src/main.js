@@ -13,6 +13,7 @@ import { renderAbout } from './pages/about.js';
 import { renderProjects } from './pages/project.js';
 import { renderProjectDetail } from './pages/project-detail.js';
 import { renderContact } from './pages/contact.js';
+import { initCoconutGame } from './utils/coconut-game.js';
 
 // ---- Theme Initialization ----
 function initTheme() {
@@ -44,6 +45,10 @@ const router = new Router([
   {
     path: '/project/:id',
     render: (params) => renderProjectDetail(params),
+    afterRender: () => {
+      // Store the cleanup function if needed
+      window._bridgeCleanup = initCoconutGame();
+    }
   },
   {
     path: '/contact',
