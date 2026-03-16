@@ -195,7 +195,19 @@ export class Router {
         link.addEventListener('click', () => {
           btn.classList.remove('active');
           menu.classList.remove('open');
+          const navbar = document.getElementById('navbar');
+          if (navbar) navbar.classList.remove('menu-open');
         });
+      });
+
+      // Close menu on window resize
+      window.addEventListener('resize', () => {
+        if (window.innerWidth > 768) {
+          btn.classList.remove('active');
+          menu.classList.remove('open');
+          const navbar = document.getElementById('navbar');
+          if (navbar) navbar.classList.remove('menu-open');
+        }
       });
     }
 
