@@ -839,6 +839,11 @@
   transform: translateY(-100px) scale(0.9);
   transition: transform 0.6s cubic-bezier(0.34, 1.56, 0.64, 1), opacity 0.4s ease;
   pointer-events: none;
+  
+  /* Hardware acceleration to prevent sub-pixel blur/flicker on hover */
+  will-change: transform;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
 }
 
 /* Realistic fuzz effect removed in favor of high-fidelity asset */
