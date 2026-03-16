@@ -134,12 +134,6 @@ export function renderProjectDetail(params) {
     <section class="section-nav-arcade">
       <div class="container">
         <div class="project-nav-arcade" id="coconut-game">
-          <!-- Prev Button (Original Style) -->
-          <a href="#/project/${prevProject.id}" class="project-nav-item">
-            <div class="project-nav-label">← Previous</div>
-            <div class="project-nav-name">${prevProject.name}</div>
-          </a>
-
           <!-- Professional Coconut Shuffle Panel -->
           <div class="arcade-bridge-panel">
             <div class="coconut-stage">
@@ -166,11 +160,18 @@ export function renderProjectDetail(params) {
             </div>
           </div>
 
-          <!-- Next Button (Original Style) -->
-          <a href="#/project/${nextProject.id}" class="project-nav-item next">
-            <div class="project-nav-label">Next →</div>
-            <div class="project-nav-name">${nextProject.name}</div>
-          </a>
+          <!-- Centered Minimal Typographic Navigation Row -->
+          <div class="centered-minimal-nav-row">
+            <a href="#/project/${prevProject.id}" class="minimal-nav-link">
+              <span class="minimal-nav-arrow">←</span>
+              <span class="minimal-nav-text">${prevProject.name}</span>
+            </a>
+            <span class="minimal-nav-separator">/</span>
+            <a href="#/project/${nextProject.id}" class="minimal-nav-link">
+              <span class="minimal-nav-text">${nextProject.name}</span>
+              <span class="minimal-nav-arrow">→</span>
+            </a>
+          </div>
         </div>
       </div>
     </section>
