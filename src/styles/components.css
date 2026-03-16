@@ -4,7 +4,7 @@
 
 /* --- NAVBAR --- */
 .navbar {
-  position: absolute;
+  position: fixed;
   top: var(--nav-top-margin);
   left: 0;
   right: 0;
