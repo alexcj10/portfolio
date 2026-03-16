@@ -561,8 +561,16 @@
 /* Klyo gets a white rounded-square background */
 #projects-card-klyo .project-card-icon,
 #project-card-klyo .project-card-icon {
+  width: 40px;
+  height: 40px;
   background: #ffffff;
   border-radius: 50%;
+}
+
+/* Adjust gap specifically for Klyo to account for smaller container */
+#projects-card-klyo .project-card-logo-row,
+#project-card-klyo .project-card-logo-row {
+  gap: calc(var(--space-3) + 2px);
 }
 
 
