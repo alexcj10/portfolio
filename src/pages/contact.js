@@ -6,7 +6,7 @@ import { profile } from '../data/projects.js';
 
 export function renderContact() {
   return `
-    <section class="section contact-section">
+    <section class="section contact-section" style="padding-top: calc(var(--nav-height) + var(--space-16));">
       <div class="container">
         <div class="contact-grid">
           <!-- Left: Info -->
