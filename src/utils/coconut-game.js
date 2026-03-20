@@ -110,9 +110,48 @@ export function initCoconutGame() {
       clickedSlot.classList.add('winner-glow');
     }
 
+    triggerFullUIFeedback(hasPrize);
+
     // Reset game after delay
     setTimeout(() => {
       resetGame();
+    }, 3000);
+  }
+
+  function triggerFullUIFeedback(isWin) {
+    const navbar = document.getElementById('navbar');
+    if (!navbar) return;
+    
+    const navInner = navbar.querySelector('.navbar-inner');
+    const playBtn = container.querySelector('#play-coconut');
+    
+    if (!navInner || !playBtn) return;
+
+    // Create navbar overlay if it doesn't exist
+    let overlay = navInner.querySelector('.navbar-feedback-overlay');
+    if (!overlay) {
+      overlay = document.createElement('div');
+      overlay.className = 'navbar-feedback-overlay';
+      navInner.appendChild(overlay);
+    }
+
+    const resultText = isWin ? "BINGO! 💎" : "MISS! ❌";
+    const typeClass = isWin ? "winner" : "loser";
+
+    // Set content and state
+    overlay.textContent = resultText;
+    overlay.className = `navbar-feedback-overlay ${typeClass}`;
+    navInner.classList.add('feedback-active');
+
+    const originalBtnHTML = playBtn.innerHTML;
+    playBtn.innerHTML = resultText;
+    playBtn.className = `arcade-play-btn feedback-active ${typeClass}`;
+
+    // Restore after 3 seconds
+    setTimeout(() => {
+      navInner.classList.remove('feedback-active');
+      playBtn.classList.remove('feedback-active', 'winner', 'loser');
+      playBtn.innerHTML = originalBtnHTML;
     }, 3000);
   }
 

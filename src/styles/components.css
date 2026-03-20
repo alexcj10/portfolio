@@ -1539,3 +1539,56 @@
   resize: vertical;
   min-height: 120px;
 }
+
+/* --- DYNAMIC UI FEEDBACK --- */
+.navbar-feedback-overlay {
+  position: absolute;
+  inset: 0;
+  background: var(--bg-elevated);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-display);
+  font-size: var(--text-base); /* Standard size to match logo */
+  font-weight: var(--weight-bold);
+  z-index: 2000;
+  opacity: 0;
+  transform: translateY(-2px);
+  transition: all 0.4s var(--ease-spring);
+  pointer-events: none;
+  border-radius: var(--radius-full); /* Match navbar-inner */
+}
+
+.navbar .feedback-active .navbar-feedback-overlay {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: all;
+}
+
+.navbar-feedback-overlay.winner {
+  color: #28c840;
+}
+
+.navbar-feedback-overlay.loser {
+  color: var(--text-secondary);
+}
+
+/* Button Hijack */
+.arcade-play-btn.feedback-active {
+  background: var(--bg-elevated) !important;
+  color: var(--text-primary) !important;
+  border-color: var(--border-primary) !important;
+  pointer-events: none;
+  font-size: var(--text-xs) !important; /* Smaller text for button hijack */
+}
+
+.arcade-play-btn.feedback-active.winner {
+  color: #28c840 !important;
+  box-shadow: 0 0 20px rgba(40, 200, 64, 0.2);
+}
+
+.arcade-play-btn.feedback-active.loser {
+  color: var(--text-secondary) !important;
+}
