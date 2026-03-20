@@ -823,8 +823,8 @@
 }
 
 .coconut-slot {
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
   position: relative;
   display: flex;
   align-items: center;
@@ -833,7 +833,7 @@
 }
 
 .game-object {
-  font-size: 24px;
+  font-size: 20px;
   z-index: 1;
   filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.1));
 }
@@ -966,30 +966,12 @@
     gap: var(--space-6);
     max-width: 300px;
   }
-
-  .coconut-slot {
-    width: 55px;
-    height: 55px;
-  }
-
-  .game-object {
-    font-size: 22px;
-  }
 }
 
 @media (max-width: 480px) {
   .coconut-slots {
     gap: var(--space-4);
     max-width: 240px;
-  }
-
-  .coconut-slot {
-    width: 45px;
-    height: 45px;
-  }
-
-  .game-object {
-    font-size: 18px;
   }
 
   .arcade-bridge-panel {
